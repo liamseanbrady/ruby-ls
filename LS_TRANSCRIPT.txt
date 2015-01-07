@@ -1,0 +1,66 @@
+$ls
+
+foo   hello.sh  hello.txt
+
+------------------------------------------------------------------
+
+$ $ ls foo
+
+apple.md  banana.txt
+
+------------------------------------------------------------------
+
+$ ls foo/*.txt
+
+foo/banana.txt
+
+------------------------------------------------------------------
+
+$ ls -l
+
+total 16
+drwxr-xr-x  4 Ingin  staff  136  7 Jan 02:12 foo
+-rw-r--r--  1 Ingin  staff   39  7 Jan 02:14 hello.sh
+-rw-r--r--  1 Ingin  staff   10  7 Jan 02:15 hello.txt
+
+------------------------------------------------------------------
+
+$ ls -a
+
+.   ..    .secret   foo   hello.sh  hello.txt
+
+------------------------------------------------------------------
+
+$ ls -a -l
+
+total 24
+drwxr-xr-x  6 Ingin  staff  204  7 Jan 02:11 .
+drwxr-xr-x  5 Ingin  staff  170  7 Jan 02:09 ..
+-rw-r--r--  1 Ingin  staff   16  7 Jan 02:12 .secret
+drwxr-xr-x  4 Ingin  staff  136  7 Jan 02:12 foo
+-rw-r--r--  1 Ingin  staff   39  7 Jan 02:14 hello.sh
+-rw-r--r--  1 Ingin  staff   10  7 Jan 02:15 hello.txt
+
+------------------------------------------------------------------
+
+$ ls -l foo/*.txt
+
+-rw-r--r--  1 Ingin  staff  48  7 Jan 02:16 foo/banana.txt
+
+------------------------------------------------------------------
+
+$ ls missingdir
+
+ls: missingdir: No such file or directory
+
+------------------------------------------------------------------
+
+$ ls -Z
+
+ls: illegal option -- Z
+usage: ls [-ABCFGHLOPRSTUWabcdefghiklmnopqrstuwx1] [file ...]
+
+
+
+
+
