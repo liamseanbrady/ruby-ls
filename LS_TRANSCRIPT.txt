@@ -1,12 +1,15 @@
 $ls
 
-foo   hello.sh  hello.txt
+foo
+hello.sh
+hello.txt
 
 ------------------------------------------------------------------
 
 $ $ ls foo
 
-apple.md  banana.txt
+apple.md
+banana.txt
 
 ------------------------------------------------------------------
 
@@ -27,7 +30,12 @@ drwxr-xr-x  4 Ingin  staff  136  7 Jan 02:12 foo
 
 $ ls -a
 
-.   ..    .secret   foo   hello.sh  hello.txt
+.
+..
+.secret
+foo
+hello.sh
+hello.txt
 
 ------------------------------------------------------------------
 
